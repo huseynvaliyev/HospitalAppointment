@@ -23,7 +23,7 @@ class SignUp extends Component {
 
   render() {
     const {auth, authError} = this.props;
-    if(auth.uid) return <Redirect to="/"/>
+    if(auth.email !== "admin@gmail.com") return <Redirect to="/"/>
 
     return (
       <div className="container">
